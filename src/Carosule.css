@@ -1,0 +1,239 @@
+.carosule {
+  margin-top: 50px;
+  width: 100%;
+  height: 600px;
+}
+.child1 {
+  color: white;
+}
+
+.child2 {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+.table-row {
+  display: table;
+}
+
+.title {
+  margin-top: -10px;
+}
+
+.book {
+  margin-top: 50px;
+  margin-left: 250px;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+}
+.book2 {
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 250px;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+}
+.slot1 {
+  position: absolute;
+  left: 0;
+  margin-top: 5px;
+  margin-left: 15px;
+  top: 0;
+}
+.slot2 {
+  position: absolute;
+  left: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+  bottom: 0;
+}
+
+.b2 {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 1em;
+  border: 3px solid black;
+  color: rgb(18, 17, 17);
+  font-size: 30px;
+  font-weight: bold;
+  margin: 5px;
+
+  transition: transform 0.8s ease;
+}
+.beat-animation {
+  animation: beat 0.25s infinite alternate;
+}
+@keyframes beat {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.wrapper.two {
+  background-color: #2c0101;
+  font-size: 6rem;
+  font-family: "Play", sans-serif;
+}
+.wrapper.six {
+  background-color: #222222;
+}
+.flicker {
+  font-size: 3rem;
+  font-family: "Merienda", sans-serif;
+  margin: 1rem auto;
+  color: rgb(255, 140, 0);
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#ff5e00),
+      to(#ff5e00),
+      color-stop(0.8, #ff5e00)
+    )
+    no-repeat;
+  /* background: gradient(
+      linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.8, #fff)
+    )
+    no-repeat; */
+  background-size: 110px 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: flick 4.5s infinite;
+}
+@keyframes flick {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+.glow1 {
+  position: relative;
+
+  max-width: 300%;
+  height: 85px;
+  background: linear-gradient(
+    45deg,
+    blue,
+    yellow,
+    green,
+    purple,
+    lightgreen,
+    pink,
+    white,
+    orange,
+    red,
+    brown,
+    cyan
+  );
+  background-size: 400%;
+  transition: all 2s ease-in-out;
+  animation: rotate 20s linear infinite;
+  border-radius: 10px;
+  z-index: 0;
+  overflow: hidden;
+}
+.glow1::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  z-index: -1;
+  background: rgb(31, 29, 29);
+  border-radius: 5px;
+}
+.glow2 {
+  position: relative;
+
+  max-width: 300%;
+  height: 400px;
+  background: linear-gradient(
+    45deg,
+    blue,
+    yellow,
+    green,
+    purple,
+    lightgreen,
+    pink,
+    white,
+    orange,
+    red,
+    brown,
+    cyan
+  );
+  background-size: 400%;
+  transition: all 2s ease-in-out;
+  animation: rotate 20s linear infinite;
+  border-radius: 10px;
+  z-index: 0;
+  overflow: hidden;
+}
+.glow2::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  z-index: -1;
+  background: rgb(9, 9, 9);
+  border-radius: 5px;
+}
+.glow3 {
+  position: relative;
+  margin-top: -20px;
+  height: 400px;
+  background: linear-gradient(
+    45deg,
+    blue,
+    yellow,
+    green,
+    purple,
+    lightgreen,
+    pink,
+    white,
+    orange,
+    red,
+    brown,
+    cyan
+  );
+  background-size: 400%;
+  transition: all 2s ease-in-out;
+  animation: rotate 20s linear infinite;
+  border-radius: 10px;
+  z-index: 0;
+  overflow: hidden;
+}
+.glow3::after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  z-index: -1;
+  background: rgb(9, 9, 9);
+  border-radius: 5px;
+}
+
+@keyframes rotate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
